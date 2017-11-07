@@ -15,14 +15,18 @@
   <div class="splash-container">
   </div>
   <!-- splash-container -->
+  <!-- positioning is absolute so it won't be in the document flow -->
 
   <div class="content-container">
+    <!-- entire content area -->
 
     <div class="site-container">
+      <!-- 970px wide & centered -->
 
       <div class="inside-splash-container">
+        <!-- placeholder that mimics splash-container -->
 
-        <header class="header-container">
+        <header class="header-container non-mobile-display">
           <div class="logo-header">
             <a href=#top-of-page>
             <img src="./resources/images/logo-white.png" alt="White Tortoiseshell logo" class="logo"></img>
@@ -40,10 +44,23 @@
 
         </header>
 
+        <header class="header-container mobile-display">
+          <div class="logo-header">
+            <a href=#top-of-page>
+            <img src="./resources/images/logo-white.png" alt="White Tortoiseshell logo" class="logo"></img>
+            </a>
+          </div>
+
+          <div class="menu-header">
+            <nav>
+              <span class="menu"><a href=#menu>Menu</a></span>
+            </nav>
+          </div>
+
+        </header>
+
         <div class="splash-message-container">
-          <!--<div class="splash-message">-->
           <h1>DON'T JUST LOOK, SEE.</h1>
-          <!--</div>-->
         </div>
 
       </div>
@@ -113,11 +130,8 @@
         </div>
       </footer>
 
-
-
     </div>
     <!-- site container -->
-
 
   </div>
   <!-- content-container -->

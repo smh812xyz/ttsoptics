@@ -63,7 +63,6 @@ h1 {
   /*border: 1px solid yellow;*/
 }
 
-
 .header-container {
   margin-top: 1rem;
   display: flex;
@@ -76,6 +75,10 @@ h1 {
   background-color: cadetblue;
   z-index: 10;
   /*margin-bottom: 10rem;*/
+}
+
+.mobile-display {
+  display: none;
 }
 
 .logo {
@@ -114,6 +117,10 @@ h1 {
   /*border: 1px solid black;*/
 }
 
+.mobile-display {
+  display: none;
+}
+
 .item-container {
   display: inline-flex;
   flex-direction: column;
@@ -136,7 +143,6 @@ h1 {
   align-items: center;
   /*border: 1px solid black;*/
 }
-
 
 .item-description {
   display: flex;
@@ -186,7 +192,6 @@ h1 {
   display: inline-flex;
   flex-direction: column;
   width: 100px%;
-  /*height: 100%;*/
   background-color: white;
   padding: 1rem 0rem;
   text-align: left;
@@ -205,6 +210,144 @@ h1 {
   /* border: 1px solid white; */
 }
 
-.logo-header .logo {
+.footer-container .logo-header .logo {
   margin-left: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  /* rules to apply for screens 1024px and smaller */
+
+  .site-container {
+    width: 100%;
+  }
+
+  .splash-container {
+    height: 22rem;
+  }
+
+  .inside-splash-container {
+    height: 22rem;
+  }
+
+  .header-container {
+    margin-top: 0rem;
+  }
+
+  .splash-message-container {
+    padding: .75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    /*border: 1px solid yellow;*/
+  }
+
+  .mobile-display {
+    display: none;
+  }
+
+
+  h1 {
+    font-size: 1.33rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+/* rules to apply for screens 650px and smaller */
+/* reality is that the menu won't display nicely under 650px wide */
+
+  .non-mobile-display {
+    display: none;
+  }
+
+  .mobile-display {
+    display: flex;
+    margin-top: 0rem;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  /* rules to apply for screens 470px and smaller */
+
+  .splash-container {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .inside-splash-container {
+    height: 17rem;
+    flex-direction: column;
+  }
+
+  .product-container {
+    flex-direction: column;
+    height: 100%;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+    align-items: center;
+  }
+
+  .item-container {
+    width: 100%;
+    height: 7rem;
+  }
+
+  .splash-message-container {
+    padding: 1rem 0rem;
+    margin-top: 9rem;
+    margin-right: 0rem;
+    justify-content: center;
+    width: 100%;
+    /*border: 1px solid yellow;*/
+  }
+
+  .information-band {
+    flex-wrap: wrap;
+    margin-bottom: 0rem;
+  }
+
+  .block-container {
+    width: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .information-block {
+    text-align: center;
+    padding: .5rem 0rem .5rem 0rem;
+  }
+
+  .information-block-white {
+    padding: 0rem;
+    margin-bottom: 4rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .footer-container {
+    justify-content: center;
+  }
+
+  .footer-container .logo-header .logo {
+    margin-left: 1rem;
+  }
+
+  .logo-header h4 {
+    display: none;
+  }
+
+  p {
+    font-size: .77rem;
+    line-height: 1.2;
+  }
+
+  #item-2,
+  #item-3 {
+    margin-top: 1.54rem;
+  }
+
 }
